@@ -1,0 +1,18 @@
+#默认不加单双引号，等同于加单引号
+name1: aaaa \nbbb
+#""：双引号；不会转义字符串里面的特殊字符；特殊字符会作为本身想表示的意思
+name2: "aaaa \n bbb"
+#''：单引号；会转义特殊字符，特殊字符最终只是一个普通的字符串数据
+name3: 'aaaa \n bbb'
+
+#persion:
+#  name: mrjoeqian@163.com
+#  age: 18
+#  birth: 2017/12/12
+#  map: {k1: v1,k2: v2}
+#  list: 
+#    - list1
+#    - list2
+#  dog: 
+#    name: 大黄
+#    age: 3
