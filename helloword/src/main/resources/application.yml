@@ -19,7 +19,6 @@ name3: 'aaaa \n bbb'
 #    name: 大黄
 #    age: 3
 
-
 spring:
   profiles:
     active: dev
@@ -37,7 +36,7 @@ server:
   port: 7002
 spring:
   profiles: dev
-  
+
 ---
 
 server:
