@@ -20,10 +20,11 @@ import lombok.experimental.Accessors;
 @Data
 // chain=true set方法返回值为this 而不是void
 @Accessors(chain = true)
+//@PropertySource只支持加载properties文件
 @PropertySource(value = { "classpath:person.properties" })
 @Component
-@ConfigurationProperties(prefix = "persion")
-public class Persion implements Serializable {
+@ConfigurationProperties(prefix = "person")
+public class Person implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	@Email

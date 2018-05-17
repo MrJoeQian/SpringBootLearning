@@ -1,3 +1,5 @@
+server:
+  port: 7001
 #默认不加单双引号，等同于加单引号
 name1: aaaa \nbbb
 #""：双引号；不会转义字符串里面的特殊字符；特殊字符会作为本身想表示的意思
@@ -16,3 +18,35 @@ name3: 'aaaa \n bbb'
 #  dog: 
 #    name: 大黄
 #    age: 3
+
+
+spring:
+  profiles:
+    active: dev
+    
+---
+
+server:
+  port: 7001
+spring:
+  profiles: test
+  
+---
+
+server:
+  port: 7002
+spring:
+  profiles: dev
+  
+---
+
+server:
+  port: 7003
+spring:
+  profiles: pro
+
+
+
+
+
+
